@@ -7,14 +7,18 @@
 
 #include "NumericConversion.hpp"
 
-// 二进制转换成十进制
+/* *********************************************************************
+编辑记录：
+时间               作者                版本         操作内容
+2022/12/26        niu0217            V1.0         完成函数编写
+********************************************************************** */
 int BinToInt(const string& strData)
 {
-    int IValue = 0; //保存最后的十进制数
-    long int IIndex = strData.size() - 1; //平方的起始数
-    for(int i = 0; i <= strData.size() - 1 && IIndex >= 0; IIndex--,i++)
+    int iValue = 0; //保存最后的十进制数
+    long int iIndex = strData.size() - 1; //平方的起始数
+    for(int i = 0; i <= strData.size() - 1 && iIndex >= 0; iIndex--,i++)
     {
-        IValue += (strData[i] - 48)*pow(2, IIndex);
+        iValue += (strData[i] - 48)*pow(2, iIndex);
     }
-    return IValue;
+    return iValue;
 }
