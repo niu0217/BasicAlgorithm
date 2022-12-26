@@ -16,6 +16,8 @@ void Test()
     // 测试二进制转换成十进制
     string strData = "1111";
     cout<<BinToInt(strData)<<endl;
+    int iData = 111;
+    cout<<BinToInt(iData)<<endl;
 }
 
 int main()
