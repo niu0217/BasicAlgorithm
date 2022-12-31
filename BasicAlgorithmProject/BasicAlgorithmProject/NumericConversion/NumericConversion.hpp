@@ -1,8 +1,8 @@
 //
 //  NumericConversion.hpp
-//  Algorithm
+//  BasicAlgorithmProject
 //
-//  Created by niu0217 on 2022/12/24.
+//  Created by niu0217 on 2022/12/31.
 //
 
 #ifndef NumericConversion_hpp
@@ -46,5 +46,15 @@ unsigned int IntToBin(const string& strData);
 
 // 十六进制转换成二进制
 
+/* **********************************************************
+作者：niu0217
+日期：2022/12/26
+函数功能：测试所有函数
+输入参数：
+输出参数：
+返回值：
+其他：
+*********************************************************** */
+void Test();
 
 #endif /* NumericConversion_hpp */

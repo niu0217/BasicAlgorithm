@@ -1,8 +1,8 @@
 //
 //  NumericConversion.cpp
-//  Algorithm
+//  BasicAlgorithmProject
 //
-//  Created by niu0217 on 2022/12/24.
+//  Created by niu0217 on 2022/12/31.
 //
 
 #include "NumericConversion.hpp"
@@ -37,4 +37,21 @@ int BinToInt(int iData)
         iData /= 10; // 每次都需要更新iData的值
     }
     return iValue;
+}
+
+/* *********************************************************************
+编辑记录：
+时间               作者                版本         操作内容
+2022/12/26        niu0217            V1.0         完成函数编写
+********************************************************************** */
+void Test()
+{
+    // 测试二进制转换成十进制
+    string strData = "1111";
+    cout<<"原始数据：   "<<strData<<endl;
+    cout<<"结果：      "<<BinToInt(strData)<<endl;
+    
+    int iData = 111;
+    cout<<"原始数据：   "<<iData<<endl;
+    cout<<"结果：      "<<BinToInt(iData)<<endl;
 }
